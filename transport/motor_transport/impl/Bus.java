@@ -1,28 +1,25 @@
 package com.transport.motor_transport.impl;
-
-import com.transport.motor_transport.MotorTransport;
 import com.transport.CityTransport;
 
-public class Bus extends MotorTransport {
+public class Bus extends CityTransport {
     final String TYPE_TRANSPORT = "bus";
     private String type_of_bus;
     private int num_of_floors;
 
     public Bus() {}
 
-    public Bus(String name, String ticket_price, String weight, String type_of_city_transport, String length,
-               String motor, String transmission, String type_of_bus, int num_of_floors) {
-        super(name, ticket_price, weight, type_of_city_transport, length, motor, transmission);
+    public Bus(String name, String weight, String length, int travel_price,String type_of_city_transport, String motor,
+               String type_of_bus, int num_of_floors) {
+        super(name, weight, length, travel_price, type_of_city_transport);
         this.type_of_bus = type_of_bus;
         this.num_of_floors = num_of_floors;
     }
 
     @Override
-    public String toString() { //function returns information about bus
-        return "Name of transport: " + name + "," + " price of ticket: " + ticket_price + "," + " weight: " + weight + ","
-                + " type of city transport: " + type_of_city_transport + "," + " length: " + length
-                + " motor: " + motor + "," + " transmission: " + transmission + "," + " type of bus: " + type_of_bus + ","
-                + " number of floors: " + num_of_floors + ".";
+    public String toString() {
+        return "Name of transport: " + getName()  + "," + " weight: " + getWeight() + "," + " length: " + getLength()
+                + "," + "travel price: " + getTravel_price() + "," + " type of bus: " + type_of_bus + ","
+                + " number of floors: " + num_of_floors;
     }
     public void Drive() {
         System.out.println("Driving the " + TYPE_TRANSPORT + "!");
@@ -30,6 +27,4 @@ public class Bus extends MotorTransport {
     public void Go() {
         System.out.println("The " + TYPE_TRANSPORT + " is going!");
     }
-
 }
-

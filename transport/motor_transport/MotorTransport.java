@@ -3,14 +3,30 @@ package com.transport.motor_transport;
 import com.transport.CityTransport;
 
 public class MotorTransport extends CityTransport {
-    protected String motor;
-    protected String transmission;
+    private String motor;
+    private String transmission;
+
+    public String getMotor() {
+        return motor;
+    }
+
+    public void setMotor(String motor) {
+        this.motor = motor;
+    }
+
+    public String getTransmission() {
+        return transmission;
+    }
+
+    public void setTransmission(String transmission) {
+        this.transmission = transmission;
+    }
 
     public MotorTransport() {}
 
-    public MotorTransport(String name, String ticket_price, String weight, String type_of_city_transport, String length,
-               String motor, String transmission) {
-        super(name, ticket_price, weight, type_of_city_transport, length);
+    public MotorTransport(String name, String weight, String length, int travel_price, String type_of_city_transport,
+                          String motor, String transmission) {
+        super(name, weight, length, travel_price, type_of_city_transport);
         this.motor = motor;
         this.transmission = transmission;
     }
