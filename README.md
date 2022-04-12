@@ -1,2 +1,2 @@
-# java-labs-2-3
-Separate repository for 2nd and 3rd Java labs. Labs were done earlier.
+java lab 02
+Реалізувати ієрархію класів що представляють транспорт, яким можна користуватись в місті (Кеб Таксі Візник Рикша Велорикша Авторикша)
