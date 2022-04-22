@@ -5,7 +5,6 @@ import lombok.*;
 
 @Setter
 @Getter
-@AllArgsConstructor
 @NoArgsConstructor
 
 public class Carriage extends WithoutEngine {
@@ -13,8 +12,8 @@ public class Carriage extends WithoutEngine {
     private String coachman;
 
     public Carriage(String name, String weight, String length, int travel_price, String type_of_city_transport,
-                    String num_of_horses, String coachman) {
-        super(name, weight, length, travel_price, type_of_city_transport, num_of_horses, coachman);
+                    String pedal_exist, String cabin, String num_of_horses, String coachman) {
+        super(name, weight, length, travel_price, type_of_city_transport, pedal_exist, cabin);
         this.num_of_horses = num_of_horses;
         this.coachman = coachman;
     }

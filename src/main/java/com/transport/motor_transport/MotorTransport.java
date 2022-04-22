@@ -7,7 +7,7 @@ import lombok.*;
 @Getter
 @NoArgsConstructor
 
-public class MotorTransport extends CityTransport {
+public abstract class MotorTransport extends CityTransport {
     private String motor;
     private String transmission;
 
@@ -17,8 +17,5 @@ public class MotorTransport extends CityTransport {
         this.motor = motor;
         this.transmission = transmission;
     }
-
-    public void Drive() {
-        System.out.println("Driving the motor transport!");
-    };
+    public abstract void Drive();
 }
