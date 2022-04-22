@@ -7,7 +7,6 @@ import lombok.*;
 @Setter
 @Getter
 @NoArgsConstructor
-@ToString
 
 public class Taxi extends MotorTransport {
         private String car_model;
@@ -26,11 +25,10 @@ public class Taxi extends MotorTransport {
                 + " length: " + getLength() + "," + " travel price: " + getTravel_price() + "," + " car model: " + car_model + ","
                 + " existence of taximeter: " + existence_of_taximeter;
     }
-
-        public void Drive() {
-            System.out.println("Driving the taxi!");
-        }
-        public void Go() {
-            System.out.println("The taxi is going!");
-        }
+    public void Drive() {
+        System.out.println("Driving the taxi!");
+    }
+    public void Go() {
+        System.out.println("The taxi is going!");
+    }
 }
