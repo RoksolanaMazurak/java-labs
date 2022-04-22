@@ -1,2 +1,2 @@
-# java-labs-2-3-4
-Separate repository for 2nd, 3rd and 4th Java labs. Labs 2-3 were done earlier.
+# lab 05
+Write modular tests for laboratory work code №4 and achieve 80% test coverage.
