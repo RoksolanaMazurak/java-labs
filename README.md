@@ -1,3 +1,4 @@
-# lab 04
-Перетворити проект з кодом 2-3 роботи таким чином, щоб його збірку можна було виконувати з-за допомогою  maven. 
+# lab 07
+Option 65.
+Replace the word order in all interrogative sentences that contain more than the specified number of words with the reverse.
 
