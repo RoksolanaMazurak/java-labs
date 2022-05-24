@@ -20,7 +20,7 @@ public class StringWriter {
     private String question;
     public String writeString(StringWriter stringWriter) throws IllegalArgumentException {
 
-        if(getStrSize() < 0) {
+        if (getStrSize() < 0) {
             throw new IllegalArgumentException("String size cannot contain '-'.");
         }
 
